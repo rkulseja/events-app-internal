@@ -58,7 +58,7 @@ describe('GET /', function() {
       });
   });
 
-  describe('POST /event', function() {
+ /* describe('POST /event', function() {
     it('adds an event', function(done) {
       request(app)
       .post('/event')
@@ -74,4 +74,4 @@ describe('GET /', function() {
       });
 
       });
-  });
+  });*/
