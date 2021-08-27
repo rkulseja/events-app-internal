@@ -4,6 +4,7 @@ const app = require('../server');
 
 describe('GET /', function() {
     it('responds with json', function(done) {
+        
       request(app)
         .get('/')
         .set('Accept', 'application/json')
@@ -14,6 +15,8 @@ describe('GET /', function() {
 
   describe('GET /version', function() {
     it('responds with the current version', function(done) {
+         
+        
       request(app)
         .get('/version')
         .set('Accept', 'application/json')
@@ -31,6 +34,7 @@ describe('GET /', function() {
 
   describe('GET /events', function() {
     it('responds with json', function(done) {
+         this.timeout(0);
       request(app)
         .get('/events')
         .set('Accept', 'application/json')
@@ -38,6 +42,7 @@ describe('GET /', function() {
         .expect(200, done);
     });
     it('returns events', function(done) {
+         this.timeout(0);
       request(app)
       .get('/events')
       .set('Accept', 'application/json')
